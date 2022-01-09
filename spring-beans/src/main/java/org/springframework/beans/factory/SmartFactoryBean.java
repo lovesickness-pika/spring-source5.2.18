@@ -39,6 +39,11 @@ package org.springframework.beans.factory;
  * @see #isPrototype()
  * @see #isSingleton()
  */
+/*FactoryBean的子接口，可以在容器初始化的时候将bean进行创建
+*SmartFactoryBean 继承自 FactoryBean，并提供了扩展方法，FactoryBean 创建的实例Bean默认是在第一次获取时创建，
+* 如果需要在容器启动时同步创建Bean实例可以重写isEagerInit()，
+* true表示容器创建阶段就会调用 getObject()去实例化对应的Bean实例。
+*/
 public interface SmartFactoryBean<T> extends FactoryBean<T> {
 
 	/**

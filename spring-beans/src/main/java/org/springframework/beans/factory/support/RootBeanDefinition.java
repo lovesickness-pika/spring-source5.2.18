@@ -52,6 +52,7 @@ import org.springframework.util.Assert;
  * @see ChildBeanDefinition
  */
 @SuppressWarnings("serial")
+//表示没有显示的继承类的bean对象，即只继承了Object类的bean
 public class RootBeanDefinition extends AbstractBeanDefinition {
 
 	@Nullable

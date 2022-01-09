@@ -81,6 +81,9 @@ import org.springframework.util.StringUtils;
  * @see ResolvableTypeProvider
  */
 @SuppressWarnings("serial")
+/*
+* 封装 Java Type ，提供对supertypes 、 interfaces和generic parameters以及最终resolve为Class的能力
+* */
 public class ResolvableType implements Serializable {
 
 	/**

@@ -55,6 +55,14 @@ import org.springframework.lang.Nullable;
  * @see org.springframework.beans.factory.BeanFactory
  * @see org.springframework.core.io.ResourceLoader
  */
+/*
+* 	EnvironmentCapable：获取Environment实例的功能，主要用于获取环境属性
+* 	ListableBeanFactory：用于访问应用程序组件的 Bean 工厂
+* 	HierarchicalBeanFactory：双亲容器的功能
+* 	MessageSource：能够解析消息，支持国际化。
+* 	ApplicationEventPublisher：能够将事件发布到注册的侦听器
+* 	ResourcePatternResolver：能够以通用方式加载文件资源
+* */
 public interface ApplicationContext extends EnvironmentCapable, ListableBeanFactory, HierarchicalBeanFactory,
 		MessageSource, ApplicationEventPublisher, ResourcePatternResolver {
 
